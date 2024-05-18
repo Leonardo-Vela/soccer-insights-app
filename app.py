@@ -112,14 +112,8 @@ def page_home():
 def main():
     st.title("Streamlit App with Sidebar")
 
-    # Get the selection from the sidebar
-    selection = sidebar()
+    page_home()
 
-    # Display content based on the selection
-    if selection == "Home":
-        page_home()
-    elif selection == "About":
-        page_about()
 
 if __name__ == "__main__":
     main()
